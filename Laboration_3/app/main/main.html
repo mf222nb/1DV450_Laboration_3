@@ -1,10 +1,6 @@
-<div data-ng-controller="LoginCtrl">
-    <p>{{ message }}</p>
-</div>
-
 <div class="col-md-4" data-ng-controller="MainCtrl as main">
-    <p data-ng-show="$scope.isLoggedIn">Du är inloggad</p>
-    <p data-ng-show="!$scope.isLoggedIn">Du är inte inloggad</p>
+    <p class="alert-success" data-ng-show="isLoggedIn">Du är inloggad</p>
+    <p class="alert-danger" data-ng-show="!isLoggedIn">Du är inte inloggad</p>
 
     <h3>Alla events</h3>
     <table class="table table-condensed table-striped">
@@ -15,6 +11,7 @@
         </thead>
         <tr data-ng-repeat="event in main.events">
             <td>{{event.description}}</td>
+            <td><button ng-show="isLoggedIn" type="button" ng-click="main.removeEvent(event.id)">Ta bort</button> </td>
         </tr>
     </table>
 </div>
