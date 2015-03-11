@@ -9,9 +9,8 @@ angular.module('myApp.login', ['ngRoute', 'ngCookies'])
   });
 }])
 
-.controller('LoginCtrl', ['$http', '$scope', '$location', '$rootScope', '$cookieStore', '$window' , function($http, $scope, $location, $rootScope, $cookieStore, $window) {
+.controller('LoginCtrl', ['$http', '$scope', '$location', '$cookieStore', '$window','appService', function($http, $scope, $location, $cookieStore, $window, appService) {
         var url = "http://localhost:3000/auth";
-        $window.sessionStorage.isLoggedIn = false;
         var that = this;
 
         that.login = function(){
@@ -30,8 +29,7 @@ angular.module('myApp.login', ['ngRoute', 'ngCookies'])
                 console.log(data);
                 $cookieStore.put('user', config.headers.name);
                 $window.sessionStorage.token = data.auth_token;
-                $window.sessionStorage.isLoggedIn = true;
-                console.log($window.sessionStorage.isLoggedIn);
+                $scope.isLoggedIn = appService.setLoggedIn(true);
                 $location.path('/main');
             });
 
@@ -40,7 +38,7 @@ angular.module('myApp.login', ['ngRoute', 'ngCookies'])
                 console.log(data.error);
                 $scope.error = data.error;
                 $window.sessionStorage.token = null;
-                $window.sessionStorage.isLoggedIn = false;
+                $scope.isLoggedIn = appService.setLoggedIn(false);
             })
         }
 }]);

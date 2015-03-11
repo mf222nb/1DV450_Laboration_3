@@ -1,8 +1,11 @@
 <div class="col-md-4" data-ng-controller="MainCtrl as main">
     <p class="alert-success" data-ng-show="isLoggedIn">Du är inloggad</p>
     <p class="alert-danger" data-ng-show="!isLoggedIn">Du är inte inloggad</p>
+    <p class="alert-success" data-ng-show="message">{{message}}</p>
 
     <h3>Alla events</h3>
+    <a href="#/create" ng-show="isLoggedIn">Skapa</a>
+    <div id="list">
     <table class="table table-condensed table-striped">
         <thead>
             <tr>
@@ -12,6 +15,12 @@
         <tr data-ng-repeat="event in main.events">
             <td>{{event.description}}</td>
             <td><button ng-show="isLoggedIn" type="button" ng-click="main.removeEvent(event.id)">Ta bort</button> </td>
+            <td><a href="#/update/{{event.id}}" ng-show="isLoggedIn">Uppdatera</a></td>
         </tr>
     </table>
+    </div>
+    <p ng-if="error" class="alert-danger">{{ error }}</p>
+</div>
+<div class="col-md-8">
+    <map center="56.66830, 16.35315" zoom="8" class="map"></map>
 </div>

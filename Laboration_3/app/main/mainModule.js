@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.main', ['ngRoute'])
+angular.module('myApp.main', ['ngRoute', 'ngMap'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/main', {
@@ -9,9 +9,10 @@ angular.module('myApp.main', ['ngRoute'])
   });
 }])
 
-.controller('MainCtrl', ['$http', '$scope', '$window', function($http, $scope, $window) {
+.controller('MainCtrl', ['$http', '$scope', '$window','appService', function($http, $scope, $window, appService) {
         var that = this;
-        $scope.isLoggedIn = sessionStorage.isLoggedIn;
+        $scope.isLoggedIn = appService.getLoggedIn();
+        $scope.message = appService.getMsg();
 
         var getConfig = {
             headers: {
@@ -43,11 +44,12 @@ angular.module('myApp.main', ['ngRoute'])
 
             promise.success(function (){
                 that.events.splice(index, 1);
-                console.log("success");
+                appService.setMsg("Händelsen är borttagen");
+                $scope.message = appService.getMsg();
             });
 
             promise.error(function(data){
-
+                $scope.error = data.error;
             })
-        }
+        };
 }]);

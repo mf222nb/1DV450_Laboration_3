@@ -1,0 +1,9 @@
+<div data-ng-controller="CreateCtrl as create">
+    <form class="simple-form">
+        Description <br />
+        <input type="text" ng-model="create.description"/><br />
+        Tag <br />
+        <input type="text" ng-model="create.name"/><br />
+        <button data-ng-click="create.create()">Skapa</button>
+    </form>
+</div>

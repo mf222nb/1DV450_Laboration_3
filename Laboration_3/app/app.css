@@ -28,3 +28,12 @@
   content: "";
   padding: 0;
 }
+
+.map{
+    height: 100%;
+}
+
+#list{
+    overflow-y: scroll;
+    height: 100%;
+}
