@@ -3,7 +3,25 @@
     <p class="alert-danger" data-ng-show="!isLoggedIn">Du är inte inloggad</p>
     <p class="alert-success" data-ng-show="message">{{message}}</p>
 
-    <h3>Alla events</h3>
+    <div class="input-group">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Tag <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li data-ng-repeat="tag in main.tags"><a href="" ng-click="main.filterTag(tag.id)">{{tag.name}}</a></li>
+                    <li><a href="" ng-click="main.getAllEvents()">Alla händelser</a></li>
+                </ul>
+        </div>
+        <input type="text" class="form-control col-md-3" placeholder="Sök händelse..." ng-model="search">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Användare <span class="caret"></span></button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li data-ng-repeat="creator in main.creators"><a href="" ng-click="main.filterCreator(creator.id)">{{creator.name}}</a></li>
+                <li><a href="" ng-click="main.getAllEvents()">Alla händelser</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Alla händelser</h3>
     <a href="#/create" ng-show="isLoggedIn">Skapa</a>
     <div id="list">
     <table class="table table-condensed table-striped">
@@ -12,8 +30,8 @@
                 <th>Namn</th>
             </tr>
         </thead>
-        <tr data-ng-repeat="event in main.events">
-            <td>{{event.description}}</td>
+        <tr data-ng-repeat="event in main.events | filter:search">
+            <td><a href="#/detail/{{event.id}}">{{event.description}}</a></td>
             <td><button ng-show="isLoggedIn" type="button" ng-click="main.removeEvent(event.id)">Ta bort</button> </td>
             <td><a href="#/update/{{event.id}}" ng-show="isLoggedIn">Uppdatera</a></td>
         </tr>
@@ -21,6 +39,14 @@
     </div>
     <p ng-if="error" class="alert-danger">{{ error }}</p>
 </div>
-<div class="col-md-8">
-    <map center="56.66830, 16.35315" zoom="8" class="map"></map>
+<div class="col-md-8" data-ng-controller="MainCtrl as main">
+    <map center="56.66830, 16.35315" zoom="8" class="map">
+        <marker data-ng-repeat="event in main.positions"
+                position="[{{event.lat}}, {{event.long}}]"
+                title=""
+                animation="Animation.BOUNCE"
+                visible="true"
+                on-click="infoWindow()">
+        </marker>
+    </map>
 </div>

@@ -11,6 +11,7 @@ angular.module('myApp.main', ['ngRoute', 'ngMap'])
 
 .controller('MainCtrl', ['$http', '$scope', '$window','appService', function($http, $scope, $window, appService) {
         var that = this;
+        that.positions = [];
         $scope.isLoggedIn = appService.getLoggedIn();
         $scope.message = appService.getMsg();
 
@@ -21,11 +22,29 @@ angular.module('myApp.main', ['ngRoute', 'ngMap'])
             }
         };
 
-        $http.get("http://localhost:3000/api/event", getConfig).success(function(data){
-            console.log(data);
-            that.events = data;
+        that.getAllEvents = function(){
+            $http.get("http://localhost:3000/api/event", getConfig).success(function(data){
+                that.events = data;
+                data.forEach(function(resp){
+                    that.positions.push(resp.position);
+                });
+                console.log(that.positions);
+            }).error(function(data){
+                $scope.error = data.error;
+            });
+        };
 
-        }).error(function(data, status){
+        that.getAllEvents();
+
+        $http.get("http://localhost:3000/api/creator", getConfig).success(function(data){
+            that.creators = data;
+        }).error(function(data){
+            $scope.error = data.error;
+        });
+
+        $http.get("http://localhost:3000/api/tag", getConfig).success(function(data){
+            that.tags = data;
+        }).error(function (data) {
             $scope.error = data.error;
         });
 
@@ -52,4 +71,24 @@ angular.module('myApp.main', ['ngRoute', 'ngMap'])
                 $scope.error = data.error;
             })
         };
+
+        that.filterTag = function(id){
+            $http.get("http://localhost:3000/api/tag/" + id, getConfig).success(function(data){
+                that.events = data;
+            }).error(function(data){
+                $scope.error = data.error;
+            });
+        };
+
+        that.filterCreator = function(id){
+            $http.get("http://localhost:3000/api/creator/" + id, getConfig).success(function(data){
+                that.events = data;
+            }).error(function(data){
+                $scope.error = data.error;
+            });
+        };
+
+        $scope.infoWindow = function(event){
+
+        }
 }]);
