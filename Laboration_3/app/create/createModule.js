@@ -17,7 +17,7 @@ angular.module("myApp.create", ['ngRoute'])
                 var lat = resp.coords.latitude;
 
                 var positionData = { 'long': long, 'lat': lat };
-                var event = { 'description': that.description };
+                var event = { 'title': that.title, 'description': that.description };
                 var tag = { 'name': that.name};
                 var data = {event: event, tags: tag, position: positionData};
 

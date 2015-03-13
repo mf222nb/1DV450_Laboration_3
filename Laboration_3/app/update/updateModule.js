@@ -11,8 +11,20 @@ angular.module("myApp.update", ['ngRoute'])
         var id = $routeParams.eventId;
         var url = "http://localhost:3000/api/event/" + id;
 
+
+        var getConfig = {
+            headers:{
+                "Accept": "application/json",
+                "Authorization" : "12345"
+            }
+        };
+        $http.get(url, getConfig).success(function (data) {
+            that.title = data.title;
+            that.description = data.description;
+        });
+
         that.update = function(){
-            var data = { 'description' : that.description };
+            var data = { 'title': that.title, 'description' : that.description };
 
             var config = {
                 headers: {

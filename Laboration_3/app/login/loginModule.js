@@ -26,16 +26,13 @@ angular.module('myApp.login', ['ngRoute', 'ngCookies'])
             var promise = $http.post(url, data, config);
 
             promise.success(function(data, status, headers, config){
-                console.log(data);
                 $cookieStore.put('user', config.headers.name);
                 $window.sessionStorage.token = data.auth_token;
                 $scope.isLoggedIn = appService.setLoggedIn(true);
                 $location.path('/main');
             });
 
-            promise.error(function(data, status, headers, config){
-                console.log(status);
-                console.log(data.error);
+            promise.error(function(data){
                 $scope.error = data.error;
                 $window.sessionStorage.token = null;
                 $scope.isLoggedIn = appService.setLoggedIn(false);

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.main', ['ngRoute', 'ngMap'])
+angular.module('myApp.main', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/main', {
@@ -9,9 +9,8 @@ angular.module('myApp.main', ['ngRoute', 'ngMap'])
   });
 }])
 
-.controller('MainCtrl', ['$http', '$scope', '$window','appService', function($http, $scope, $window, appService) {
+.controller('MainCtrl', ['$http', '$scope', '$window','appService','$cookieStore', function($http, $scope, $window, appService, $cookieStore) {
         var that = this;
-        that.positions = [];
         $scope.isLoggedIn = appService.getLoggedIn();
         $scope.message = appService.getMsg();
 
@@ -25,10 +24,6 @@ angular.module('myApp.main', ['ngRoute', 'ngMap'])
         that.getAllEvents = function(){
             $http.get("http://localhost:3000/api/event", getConfig).success(function(data){
                 that.events = data;
-                data.forEach(function(resp){
-                    that.positions.push(resp.position);
-                });
-                console.log(that.positions);
             }).error(function(data){
                 $scope.error = data.error;
             });
@@ -88,7 +83,7 @@ angular.module('myApp.main', ['ngRoute', 'ngMap'])
             });
         };
 
-        $scope.infoWindow = function(event){
-
-        }
+        that.checkUser = function(checkUser){
+            return checkUser === $cookieStore.get('user');
+        };
 }]);

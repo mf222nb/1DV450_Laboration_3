@@ -1,11 +1,23 @@
-<div class="col-md-8" data-ng-controller="DetailCtrl as detail">
-    <map center="56.66830, 16.35315" zoom="8" class="map">
-        <marker data-ng-repeat="event in detail.events"
-                position="[{{event.position.lat}}, {{event.position.long}}]"
-                title="{{event.description}}"
+<div class="col-md-12" data-ng-controller="DetailCtrl as detail">
+    <div class="col-md-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Titel: {{detail.event.title}}</div>
+            <div class="panel-body">
+                <p>Beskrivning: {{detail.event.description}}</p>
+                <p>Tag: {{detail.event.tags[0].name}}</p>
+                <p>Användare: {{detail.event.creator.name}}</p>
+            </div>
+        </div>
+
+    </div>
+    <div ng-if="detail.bool" class="col-md-8">
+    <map center="{{detail.event.position.lat}}, {{detail.event.position.long}}" zoom="15" class="map">
+        <marker
+                position="[{{detail.event.position.lat}}, {{detail.event.position.long}}]"
+                title="{{detail.event.description}}"
                 animation="Animation.BOUNCE"
-                visible="true"
-                on-click="infoWindow()">
+                visible="true">
         </marker>
     </map>
+    </div>
 </div>

@@ -8,11 +8,11 @@ angular.module("myApp.detail", ['ngRoute', 'ngMap'])
         });
     }])
 
-.controller("DetailCtrl", ['$routeParams','$http',function($routeParams, $http){
+.controller("DetailCtrl", ['$routeParams','$http','$scope',function($routeParams, $http, $scope){
         var that = this;
         var id = $routeParams.detailId;
-
-        var url = "http://localhost:3000/api/event/" + id;
+        that.event = {};
+        that.bool = false;
 
         var config = {
             headers: {
@@ -21,7 +21,11 @@ angular.module("myApp.detail", ['ngRoute', 'ngMap'])
             }
         };
 
-        $http.get(url, config).success(function(data){
-
-        })
+        $http.get("http://localhost:3000/api/event/" + id, config).success(function(data){
+                that.event = data;
+                that.bool = true;
+                console.log(data);
+        }).error(function (data) {
+            $scope.error = data.error;
+        });
     }]);

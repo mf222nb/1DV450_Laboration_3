@@ -8,6 +8,7 @@ angular.module("myApp.logout", ['ngRoute'])
             controller: 'LogoutCtrl'
         });
     }])
-.controller('LogoutCtrl', ['$window', 'appService', function ($window, appService) {
+.controller('LogoutCtrl', ['$window', 'appService','$cookieStore', function ($window, appService, $cookieStore) {
         appService.setLoggedIn(false);
+        $cookieStore.remove('user');
 }]);

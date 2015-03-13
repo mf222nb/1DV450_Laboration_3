@@ -24,29 +24,18 @@
     <h3>Alla händelser</h3>
     <a href="#/create" ng-show="isLoggedIn">Skapa</a>
     <div id="list">
-    <table class="table table-condensed table-striped">
-        <thead>
-            <tr>
-                <th>Namn</th>
+        <table class="table table-condensed table-striped">
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                </tr>
+            </thead>
+            <tr data-ng-repeat="event in main.events | filter:search">
+                <td><a href="#/detail/{{event.id}}">{{event.title}}</a></td>
+                <td><button  ng-show="main.checkUser(event.creator.name) && isLoggedIn" type="button" ng-click="main.removeEvent(event.id)">Ta bort</button> </td>
+                <td><a href="#/update/{{event.id}}" ng-show="main.checkUser(event.creator.name) && isLoggedIn">Uppdatera</a></td>
             </tr>
-        </thead>
-        <tr data-ng-repeat="event in main.events | filter:search">
-            <td><a href="#/detail/{{event.id}}">{{event.description}}</a></td>
-            <td><button ng-show="isLoggedIn" type="button" ng-click="main.removeEvent(event.id)">Ta bort</button> </td>
-            <td><a href="#/update/{{event.id}}" ng-show="isLoggedIn">Uppdatera</a></td>
-        </tr>
-    </table>
+        </table>
     </div>
     <p ng-if="error" class="alert-danger">{{ error }}</p>
-</div>
-<div class="col-md-8" data-ng-controller="MainCtrl as main">
-    <map center="56.66830, 16.35315" zoom="8" class="map">
-        <marker data-ng-repeat="event in main.positions"
-                position="[{{event.lat}}, {{event.long}}]"
-                title=""
-                animation="Animation.BOUNCE"
-                visible="true"
-                on-click="infoWindow()">
-        </marker>
-    </map>
 </div>
