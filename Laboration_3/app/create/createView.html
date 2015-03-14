@@ -1,11 +1,20 @@
+<my-menu></my-menu>
 <div data-ng-controller="CreateCtrl as create">
-    <form class="simple-form">
-        Titel <br />
-        <input type="text" ng-model="create.title"><br />
-        Description <br />
-        <input type="text" ng-model="create.description"/><br />
-        Tag <br />
-        <input type="text" ng-model="create.name"/><br />
-        <button data-ng-click="create.create()">Skapa</button>
-    </form>
+    <div class="col-md-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Skapa händelse</div>
+            <div class="panel-body">
+                <form class="simple-form">
+                    Titel <br />
+                    <input type="text" ng-model="create.title"><br />
+                    Description <br />
+                    <input type="text" ng-model="create.description"/><br />
+                    Tag <br />
+                    <input type="text" ng-model="create.name"/><br /> <br />
+                    <button data-ng-click="create.create()">Skapa</button>
+                </form>
+            </div>
+        <p ng-show="error" class="alert-danger">{{ error }}</p>
+        </div>
+    </div>
 </div>

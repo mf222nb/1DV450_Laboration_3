@@ -7,7 +7,7 @@ angular.module("myApp.create", ['ngRoute'])
             controller: 'CreateCtrl'
         });
     }])
-.controller("CreateCtrl", ['$http', '$window','$location','appService', function($http, $window, $location, appService){
+.controller("CreateCtrl", ['$http', '$window','$location','appService','$scope', function($http, $window, $location, appService, $scope){
         var that = this;
         var url = "http://localhost:3000/api/event";
 
@@ -36,6 +36,7 @@ angular.module("myApp.create", ['ngRoute'])
                     $location.path('/main');
                 });
                 promise.error(function (data) {
+                    $scope.error = data.error;
                 });
             });
 

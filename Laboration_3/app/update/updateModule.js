@@ -6,7 +6,7 @@ angular.module("myApp.update", ['ngRoute'])
             controller: 'UpdateCtrl'
         });
 }])
-.controller("UpdateCtrl", ['$routeParams','$window','$http','$location','appService', function($routeParams, $window, $http, $location, appService){
+.controller("UpdateCtrl", ['$routeParams','$window','$http','$location','appService','$scope', function($routeParams, $window, $http, $location, appService, $scope){
         var that = this;
         var id = $routeParams.eventId;
         var url = "http://localhost:3000/api/event/" + id;
@@ -21,6 +21,8 @@ angular.module("myApp.update", ['ngRoute'])
         $http.get(url, getConfig).success(function (data) {
             that.title = data.title;
             that.description = data.description;
+        }).error(function(data){
+            $scope.error = data.error;
         });
 
         that.update = function(){

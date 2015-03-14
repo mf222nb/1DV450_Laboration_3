@@ -32,4 +32,11 @@ angular.module('myApp', [
         this.getMsg = function(){
             return message;
         };
-}]);
+}])
+
+.directive("myMenu", function(){
+        return {
+            restrict: 'E',
+            templateUrl: 'menu.html'
+        }
+    });

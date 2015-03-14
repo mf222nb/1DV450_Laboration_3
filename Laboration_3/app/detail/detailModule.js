@@ -24,7 +24,6 @@ angular.module("myApp.detail", ['ngRoute', 'ngMap'])
         $http.get("http://localhost:3000/api/event/" + id, config).success(function(data){
                 that.event = data;
                 that.bool = true;
-                console.log(data);
         }).error(function (data) {
             $scope.error = data.error;
         });

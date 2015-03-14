@@ -1,10 +1,16 @@
+<my-menu></my-menu>
 <div class="col-md-4" data-ng-controller="LoginCtrl as user">
-<form novalidate name="user.form" class="simple-form">
-    Name: <br />
-    <input type="name" ng-model="user.name"/><br />
-    Password: <br />
-    <input type="password" ng-model="user.password"/> <br />
-    <button data-ng-click="user.login()">Logga in</button>
-</form>
-    <p ng-if="error" class="alert-danger">{{ error }}</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">Login</div>
+        <div class="panel-body">
+            <form novalidate name="user.form" class="simple-form">
+            Name: <br />
+            <input type="name" ng-model="user.name"/><br />
+            Password: <br />
+            <input type="password" ng-model="user.password"/> <br /> <br />
+            <button data-ng-click="user.login()">Logga in</button>
+            </form>
+        </div>
+    <p ng-show="error" class="alert-danger">{{ error }}</p>
+</div>
 </div>

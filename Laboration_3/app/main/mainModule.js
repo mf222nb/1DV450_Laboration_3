@@ -9,7 +9,10 @@ angular.module('myApp.main', ['ngRoute'])
   });
 }])
 
-.controller('MainCtrl', ['$http', '$scope', '$window','appService','$cookieStore', function($http, $scope, $window, appService, $cookieStore) {
+.controller('MainCtrl', ['$http', '$scope', '$window','appService','$cookieStore','$location', function($http, $scope, $window, appService, $cookieStore, $location) {
+        $scope.isActive = function (viewLocation) {
+            return viewLocation === $location.path();
+        };
         var that = this;
         $scope.isLoggedIn = appService.getLoggedIn();
         $scope.message = appService.getMsg();
@@ -44,7 +47,6 @@ angular.module('myApp.main', ['ngRoute'])
         });
 
         that.removeEvent = function(id){
-            console.log(id);
             var index = that.events.map(function(e) { return e.id; }).indexOf(id);
             var url = "http://localhost:3000/api/event/" + id;
             var config = {

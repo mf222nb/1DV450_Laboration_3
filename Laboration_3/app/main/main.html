@@ -1,4 +1,6 @@
-<div class="col-md-4" data-ng-controller="MainCtrl as main">
+<my-menu></my-menu>
+<div class="col-md-12" data-ng-controller="MainCtrl as main">
+    <div class="col-md-8 col-md-offset-2">
     <p class="alert-success" data-ng-show="isLoggedIn">Du är inloggad</p>
     <p class="alert-danger" data-ng-show="!isLoggedIn">Du är inte inloggad</p>
     <p class="alert-success" data-ng-show="message">{{message}}</p>
@@ -11,7 +13,7 @@
                     <li><a href="" ng-click="main.getAllEvents()">Alla händelser</a></li>
                 </ul>
         </div>
-        <input type="text" class="form-control col-md-3" placeholder="Sök händelse..." ng-model="search">
+        <input type="text" class="form-control col-md-3" placeholder="Filtrera händelse..." ng-model="search">
         <div class="input-group-btn">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Användare <span class="caret"></span></button>
             <ul class="dropdown-menu dropdown-menu-right" role="menu">
@@ -22,6 +24,7 @@
     </div>
 
     <h3>Alla händelser</h3>
+    <p ng-show="error" class="alert-danger">{{ error }}</p>
     <a href="#/create" ng-show="isLoggedIn">Skapa</a>
     <div id="list">
         <table class="table table-condensed table-striped">
@@ -37,5 +40,5 @@
             </tr>
         </table>
     </div>
-    <p ng-if="error" class="alert-danger">{{ error }}</p>
+    </div>
 </div>

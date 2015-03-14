@@ -1,7 +1,8 @@
+<my-menu></my-menu>
 <div class="col-md-12" data-ng-controller="DetailCtrl as detail">
     <div class="col-md-4">
         <div class="panel panel-primary">
-            <div class="panel-heading">Titel: {{detail.event.title}}</div>
+            <div class="panel-heading"><p>Titel: {{detail.event.title}}</p></div>
             <div class="panel-body">
                 <p>Beskrivning: {{detail.event.description}}</p>
                 <p>Tag: {{detail.event.tags[0].name}}</p>
@@ -14,10 +15,11 @@
     <map center="{{detail.event.position.lat}}, {{detail.event.position.long}}" zoom="15" class="map">
         <marker
                 position="[{{detail.event.position.lat}}, {{detail.event.position.long}}]"
-                title="{{detail.event.description}}"
+                title="Title: {{detail.event.title}}"
                 animation="Animation.BOUNCE"
                 visible="true">
         </marker>
     </map>
     </div>
+    <p ng-show="error" class="alert-danger">{{ error }}</p>
 </div>

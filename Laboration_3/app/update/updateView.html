@@ -1,9 +1,18 @@
+<my-menu></my-menu>
 <div data-ng-controller="UpdateCtrl as update">
-    <form class="simple-form">
-        Titel <br />
-        <input type="text" ng-model="update.title"><br />
-        Description: <br />
-        <input type="text" ng-model="update.description"/><br />
-        <button data-ng-click="update.update()">Save</button>
-    </form>
+    <div class="col-md-4">
+        <p ng-show="error" class="alert-danger">{{ error }}</p>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Uppdatera</div>
+            <div class="panel-body">
+                <form class="simple-form">
+                    Titel <br />
+                    <input type="text" ng-model="update.title"><br />
+                    Description: <br />
+                    <input type="text" ng-model="update.description"/><br /> <br />
+                    <button data-ng-click="update.update()">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

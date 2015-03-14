@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a903ab1f-3cac-415f-a172-710b30f0888b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/app.css" afterPath="$PROJECT_DIR$/Laboration_3/app/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/app.js" afterPath="$PROJECT_DIR$/Laboration_3/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/create/createModule.js" afterPath="$PROJECT_DIR$/Laboration_3/app/create/createModule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/create/createView.html" afterPath="$PROJECT_DIR$/Laboration_3/app/create/createView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/detail/detailModule.js" afterPath="$PROJECT_DIR$/Laboration_3/app/detail/detailModule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/detail/detailView.html" afterPath="$PROJECT_DIR$/Laboration_3/app/detail/detailView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/login/loginModule.js" afterPath="$PROJECT_DIR$/Laboration_3/app/login/loginModule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" afterPath="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/index.html" afterPath="$PROJECT_DIR$/Laboration_3/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/login/loginView.html" afterPath="$PROJECT_DIR$/Laboration_3/app/login/loginView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/main/main.html" afterPath="$PROJECT_DIR$/Laboration_3/app/main/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/main/mainModule.js" afterPath="$PROJECT_DIR$/Laboration_3/app/main/mainModule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/update/updateModule.js" afterPath="$PROJECT_DIR$/Laboration_3/app/update/updateModule.js" />
@@ -37,41 +38,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mainModule.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/mainModule.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1218" max-vertical-offset="1598">
-              <caret line="86" column="58" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginModule.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboration_3/app/login/loginModule.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-              <caret line="11" column="71" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6723164" vertical-offset="357" max-vertical-offset="782">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.060714286" vertical-offset="0" max-vertical-offset="833">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logoutModule.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="850">
+              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailView.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/detail/detailView.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="510">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createView.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/create/createView.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="425">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateView.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/update/updateView.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="391">
+              <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginView.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/login/loginView.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="374">
+              <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -80,18 +101,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration_3/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693" vertical-offset="102" max-vertical-offset="986">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="136" max-vertical-offset="901">
+              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.js">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="697">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+              <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -106,21 +127,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Laboration_3/menu.html" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/menu.html" />
         <option value="$PROJECT_DIR$/Laboration_3/app/update/update.html" />
         <option value="$PROJECT_DIR$/Laboration_3/app/map/mapModule.js" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/app.css" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/app.js" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/index.html" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/app.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/detail/detailModule.js" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/create/createView.html" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/create/createModule.js" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/update/updateView.html" />
         <option value="$PROJECT_DIR$/Laboration_3/app/update/updateModule.js" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/create/createModule.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/detail/detailView.html" />
         <option value="$PROJECT_DIR$/Laboration_3/app/login/loginModule.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/main/mainModule.js" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/login/loginView.html" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/menu.html" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/create/createView.html" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/update/updateView.html" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/app.css" />
         <option value="$PROJECT_DIR$/Laboration_3/app/main/main.html" />
       </list>
     </option>
@@ -364,10 +386,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -375,10 +401,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -422,7 +444,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3046252" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -434,11 +456,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -464,6 +486,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="340">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="986">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="697">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/mainModule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1683">
@@ -718,93 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/login/loginView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="272">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9081803" vertical-offset="0" max-vertical-offset="765">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/create/createModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35789475" vertical-offset="153" max-vertical-offset="850">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/create/createView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="272">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="3" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/update/updateModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.98421055" vertical-offset="0" max-vertical-offset="901">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/update/updateView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09264305" vertical-offset="0" max-vertical-offset="367">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/detail/detailView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="476">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/detail/detailModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="102" max-vertical-offset="986">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/mainModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1218" max-vertical-offset="1598">
-          <caret line="86" column="58" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
@@ -813,18 +780,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/update/updateModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5368421" vertical-offset="204" max-vertical-offset="935">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/create/createModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70989764" vertical-offset="281" max-vertical-offset="867">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="816">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/login/loginModule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="71" />
+          <caret line="11" column="169" selection-start-line="11" selection-start-column="169" selection-end-line="11" selection-end-column="169" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/detail/detailModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68781304" vertical-offset="13" max-vertical-offset="612">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/login/loginView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="374">
+          <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/create/createView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="425">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/update/updateView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="391">
+          <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/mainModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1632">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/detail/detailView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="510">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="850">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="136" max-vertical-offset="901">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6723164" vertical-offset="357" max-vertical-offset="782">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.060714286" vertical-offset="0" max-vertical-offset="833">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
