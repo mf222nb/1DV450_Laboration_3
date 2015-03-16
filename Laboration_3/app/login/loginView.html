@@ -8,7 +8,7 @@
             <input type="name" ng-model="user.name"/><br />
             Password: <br />
             <input type="password" ng-model="user.password"/> <br /> <br />
-            <button data-ng-click="user.login()">Logga in</button>
+            <button class="btn btn-primary" data-ng-click="user.login()">Logga in</button>
             </form>
         </div>
     <p ng-show="error" class="alert-danger">{{ error }}</p>

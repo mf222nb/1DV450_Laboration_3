@@ -1,17 +1,23 @@
 <my-menu></my-menu>
 <div data-ng-controller="CreateCtrl as create">
-    <div class="col-md-4">
+    <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-primary">
             <div class="panel-heading">Skapa händelse</div>
             <div class="panel-body">
-                <form class="simple-form">
+                <form name="myForm" class="simple-form">
                     Titel <br />
-                    <input type="text" ng-model="create.title"><br />
-                    Description <br />
-                    <input type="text" ng-model="create.description"/><br />
-                    Tag <br />
-                    <input type="text" ng-model="create.name"/><br /> <br />
-                    <button data-ng-click="create.create()">Skapa</button>
+                    <input type="text" name="title" ng-model="create.title" required/>
+                    <span class="error" ng-show="myForm.title.$error.required">
+                    Krävs!</span><br />
+                    Beskrivning <br />
+                    <textarea type="text" name="description" ng-model="create.description" required></textarea>
+                    <span class="error" ng-show="myForm.description.$error.required">
+                    Krävs!</span><br />
+                    Aktivitet <br />
+                    <input type="text" name="tag" ng-model="create.name" required/>
+                    <span class="error" ng-show="myForm.tag.$error.required">
+                    Krävs!</span><br /><br />
+                    <button class="btn btn-primary" data-ng-click="create.create()">Skapa</button>
                 </form>
             </div>
         <p ng-show="error" class="alert-danger">{{ error }}</p>

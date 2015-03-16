@@ -1,16 +1,20 @@
 <my-menu></my-menu>
 <div data-ng-controller="UpdateCtrl as update">
-    <div class="col-md-4">
+    <div class="col-md-4 col-md-offset-4">
         <p ng-show="error" class="alert-danger">{{ error }}</p>
         <div class="panel panel-primary">
             <div class="panel-heading">Uppdatera</div>
             <div class="panel-body">
-                <form class="simple-form">
+                <form name="myForm" class="simple-form">
                     Titel <br />
-                    <input type="text" ng-model="update.title"><br />
-                    Description: <br />
-                    <input type="text" ng-model="update.description"/><br /> <br />
-                    <button data-ng-click="update.update()">Save</button>
+                    <input type="text" name="title" ng-model="update.title" required/>
+                    <span class="error" ng-show="myForm.title.$error.required">
+                    Krävs!</span><br />
+                    Beskrivning: <br />
+                    <textarea type="text" name="description" ng-model="update.description" required></textarea>
+                    <span class="error" ng-show="myForm.description.$error.required">
+                    Krävs!</span><br /><br />
+                    <button class="btn btn-primary" data-ng-click="update.update()">Save</button>
                 </form>
             </div>
         </div>

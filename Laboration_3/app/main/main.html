@@ -7,7 +7,7 @@
 
     <div class="input-group">
         <div class="input-group-btn">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Tag <span class="caret"></span></button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Aktivitet <span class="caret"></span></button>
                 <ul class="dropdown-menu" role="menu">
                     <li data-ng-repeat="tag in main.tags"><a href="" ng-click="main.filterTag(tag.id)">{{tag.name}}</a></li>
                     <li><a href="" ng-click="main.getAllEvents()">Alla händelser</a></li>
@@ -23,20 +23,21 @@
         </div>
     </div>
 
-    <h3>Alla händelser</h3>
+    <h3>Sök eller skapa nya aktiviteter</h3>
     <p ng-show="error" class="alert-danger">{{ error }}</p>
-    <a href="#/create" ng-show="isLoggedIn">Skapa</a>
+    <a class="btn btn-primary" href="#/create" ng-show="isLoggedIn">Skapa</a>
     <div id="list">
-        <table class="table table-condensed table-striped">
+        <table class="table table-condensed">
             <thead>
                 <tr>
                     <th>Namn</th>
                 </tr>
             </thead>
             <tr data-ng-repeat="event in main.events | filter:search">
-                <td><a href="#/detail/{{event.id}}">{{event.title}}</a></td>
-                <td><button  ng-show="main.checkUser(event.creator.name) && isLoggedIn" type="button" ng-click="main.removeEvent(event.id)">Ta bort</button> </td>
-                <td><a href="#/update/{{event.id}}" ng-show="main.checkUser(event.creator.name) && isLoggedIn">Uppdatera</a></td>
+                <td>{{event.title}}</td>
+                <td><button class="btn btn-primary" ng-show="main.checkUser(event.creator.name) && isLoggedIn" type="button" ng-click="main.removeEvent(event.id)">Ta bort</button> </td>
+                <td><a class="btn btn-primary" href="#/update/{{event.id}}" ng-show="main.checkUser(event.creator.name) && isLoggedIn">Uppdatera</a></td>
+                <td><a class="btn btn-primary" href="#/detail/{{event.id}}">Information</a></td>
             </tr>
         </table>
     </div>

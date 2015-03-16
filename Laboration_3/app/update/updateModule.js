@@ -43,7 +43,7 @@ angular.module("myApp.update", ['ngRoute'])
             });
 
             promise.error(function(data){
-                $scope.error = data.error;
+                $scope.error = data.message_for_user;
             })
         }
 }]);
