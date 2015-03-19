@@ -7,7 +7,7 @@ angular.module("myApp.detail", ['ngRoute', 'ngMap'])
         });
     }])
 
-.controller("DetailCtrl", ['$routeParams','$http','$scope',function($routeParams, $http, $scope){
+.controller("DetailCtrl", ['$routeParams','$http','$scope','$location',function($routeParams, $http, $scope, $location){
         var that = this;
         //Hämtar ut id från URL
         var id = $routeParams.detailId;
@@ -25,7 +25,10 @@ angular.module("myApp.detail", ['ngRoute', 'ngMap'])
         $http.get("http://localhost:3000/api/event/" + id, config).success(function(data){
             that.event = data;
             that.bool = true;
-        }).error(function (data) {
+        }).error(function (data, statuscode) {
+            if(statuscode === 404){
+                $location.path('/main');
+            }
             $scope.error = data.error;
         });
     }]);
