@@ -16,7 +16,8 @@ https://github.com/mf222nb/1DV450_Laboration_2
 
 1. Ladda ner eller forka repot
 2. Öppna i Webstorm eller liknande program
-3. Gå till webbläsaren och skriv in i URL http://localhost:63343/1DV450_Laboration_3/Laboration_3/app/index.html
+3. I terminalen skriv npm bower install
+4. Gå till webbläsaren och skriv in i URL http://localhost:63343/1DV450_Laboration_3/Laboration_3/app/index.html
 
 Användarenamn: Steve, Pelle och Jonas<br>
 Lösenord för alla användare: qwerty
