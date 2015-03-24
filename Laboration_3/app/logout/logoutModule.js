@@ -9,7 +9,7 @@ angular.module("myApp.logout", ['ngRoute'])
         });
     }])
 .controller('LogoutCtrl', ['$window', 'appService','$cookieStore', function ($window, appService, $cookieStore) {
-        //När man loggar ut så sätter jag boolen till false och tar bort kakan med användarnamn
-        appService.setLoggedIn(false);
+        //När man loggar ut så tömmer jag sessionstorage
+        $window.sessionStorage.clear();
         $cookieStore.remove('user');
 }]);

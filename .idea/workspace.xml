@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a903ab1f-3cac-415f-a172-710b30f0888b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/.gitignore" afterPath="$PROJECT_DIR$/Laboration_3/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" afterPath="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1DV450_Laboration_3.iws" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="createView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration_3/app/create/createView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="255" max-vertical-offset="527">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="527">
               <caret line="15" column="29" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
@@ -67,11 +67,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration_3/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09107143" vertical-offset="187" max-vertical-offset="901">
+            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="901">
               <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logoutModule.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.312187" vertical-offset="0" max-vertical-offset="599">
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="901">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,7 +126,6 @@
         <option value="$PROJECT_DIR$/Laboration_3/app/app.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/login/loginModule.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/main/mainModule.js" />
-        <option value="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/create/createModule.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/update/updateView.html" />
         <option value="$PROJECT_DIR$/Laboration_3/app/create/createView.html" />
@@ -115,6 +134,7 @@
         <option value="$PROJECT_DIR$/Laboration_3/app/detail/detailModule.js" />
         <option value="$PROJECT_DIR$/Laboration_3/app/main/main.html" />
         <option value="$PROJECT_DIR$/Laboration_3/.gitignore" />
+        <option value="$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js" />
       </list>
     </option>
   </component>
@@ -150,6 +170,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -356,7 +377,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,7 +455,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1234" height="736" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3046252" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -726,13 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/create/createModule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
@@ -772,13 +785,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/README.md">
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="5151">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/update/updateView.html">
@@ -789,29 +802,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/login/loginModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17406143" vertical-offset="85" max-vertical-offset="833">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="170" max-vertical-offset="748">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9365609" vertical-offset="102" max-vertical-offset="901">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/main/mainModule.js">
@@ -840,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05923345" vertical-offset="0" max-vertical-offset="574">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,14 +845,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.4512195" vertical-offset="259" max-vertical-offset="833">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/login/loginModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5802048" vertical-offset="0" max-vertical-offset="833">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="901">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration_3/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09107143" vertical-offset="187" max-vertical-offset="901">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="901">
           <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration_3/app/logout/logoutModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.312187" vertical-offset="0" max-vertical-offset="599">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
           <folding />
         </state>
       </provider>
