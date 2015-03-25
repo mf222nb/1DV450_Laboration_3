@@ -11,18 +11,20 @@ angular.module("myApp.detail", ['ngRoute', 'ngMap'])
         var that = this;
         //Hämtar ut id från URL
         var id = $routeParams.detailId;
+        var apiKey = appService.getApiKey();
+        var url = appService.getUrl();
         that.event = {};
         that.bool = false;
 
         var config = {
             headers: {
-                "Authorization" : "12345",
+                "Authorization" : apiKey,
                 "Accept" : "application/json"
             }
         };
 
         //Hämtar ut ett event
-        $http.get("http://localhost:3000/api/event/" + id, config).success(function(data){
+        $http.get(url+"/event/" + id, config).success(function(data){
             that.event = data;
             that.bool = true;
         }).error(function (data, statuscode) {

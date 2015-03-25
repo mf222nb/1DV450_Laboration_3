@@ -9,13 +9,15 @@ angular.module("myApp.update", ['ngRoute'])
 .controller("UpdateCtrl", ['$routeParams','$window','$http','$location','appService','$scope', function($routeParams, $window, $http, $location, appService, $scope){
         var that = this;
         var id = $routeParams.eventId;
-        var url = "http://localhost:3000/api/event/" + id;
+        var baseUrl = appService.getUrl();
+        var apiKey = appService.getApiKey();
+        var url = baseUrl+"/event/" + id;
 
 
         var getConfig = {
             headers:{
                 "Accept": "application/json",
-                "Authorization" : "12345"
+                "Authorization" : apiKey
             }
         };
         $http.get(url, getConfig).success(function (data) {

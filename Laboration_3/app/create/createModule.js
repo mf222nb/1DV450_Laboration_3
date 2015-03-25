@@ -8,7 +8,8 @@ angular.module("myApp.create", ['ngRoute'])
     }])
 .controller("CreateCtrl", ['$http', '$window','$location','appService','$scope', function($http, $window, $location, appService, $scope){
         var that = this;
-        var url = "http://localhost:3000/api/event";
+        var baseUrl = appService.getUrl();
+        var url = baseUrl+"/event";
 
         //När man skapar kollar man om webbläsaren har stöd för geolocation och har den det så får man enfråga om det är
         //okej att geolocation hämtar ens position och då sparar när man fyllt i annars kommer ett meddelande ut.

@@ -9,7 +9,7 @@ angular.module('myApp.login', ['ngRoute', 'ngCookies'])
 }])
 
 .controller('LoginCtrl', ['$http', '$scope', '$location', '$cookieStore', '$window','appService', function($http, $scope, $location, $cookieStore, $window, appService) {
-        var url = "http://localhost:3000/auth";
+        var url = appService.getLoginUrl();
         var that = this;
 
         //Loggar in genom att ta användarnamn och lösenord och sätta dem i headern
@@ -37,8 +37,7 @@ angular.module('myApp.login', ['ngRoute', 'ngCookies'])
             //Om det går fel så sätter jag ett felmeddelande och sätter token till null
             promise.error(function(data){
                 $scope.error = data.error;
-                $window.sessionStorage.token = null;
-                $scope.isLoggedIn = appService.setLoggedIn(false);
+                $window.sessionStorage.clear();
             })
         }
 }]);

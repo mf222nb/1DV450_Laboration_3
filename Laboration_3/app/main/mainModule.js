@@ -14,20 +14,22 @@ angular.module('myApp.main', ['ngRoute'])
             return viewLocation === $location.path();
         };
         var that = this;
+        var url = appService.getUrl();
+        var apiKey = appService.getApiKey();
         $scope.isLoggedIn = appService.getLoggedIn();
         $scope.message = appService.getMsg();
 
         //Configuration för att få in rätt headers till requestet
         var getConfig = {
             headers: {
-                "Authorization" : "12345",
+                "Authorization" : apiKey,
                 "Accept" : "application/json"
             }
         };
 
         //Hämtar ut alla events
         that.getAllEvents = function(){
-            $http.get("http://localhost:3000/api/event", getConfig).success(function(data){
+            $http.get(url+"/event", getConfig).success(function(data){
                 that.events = data;
             }).error(function(data){
                 $scope.error = data.error;
@@ -37,14 +39,14 @@ angular.module('myApp.main', ['ngRoute'])
         that.getAllEvents();
 
         //Hämtar ut alla creators
-        $http.get("http://localhost:3000/api/creator", getConfig).success(function(data){
+        $http.get(url+"/creator", getConfig).success(function(data){
             that.creators = data;
         }).error(function(data){
             $scope.error = data.error;
         });
 
         //Hämtar ut alla taggar
-        $http.get("http://localhost:3000/api/tag", getConfig).success(function(data){
+        $http.get(url+"/tag", getConfig).success(function(data){
             that.tags = data;
         }).error(function (data) {
             $scope.error = data.error;
@@ -53,7 +55,7 @@ angular.module('myApp.main', ['ngRoute'])
         //Tar bort ett event
         that.removeEvent = function(id){
             var index = that.events.map(function(e) { return e.id; }).indexOf(id);
-            var url = "http://localhost:3000/api/event/" + id;
+            var url = url+"/event/" + id;
             var config = {
                 headers : {
                     "Accept" : "application/json",
@@ -76,7 +78,7 @@ angular.module('myApp.main', ['ngRoute'])
 
         //Filtrera på taggar
         that.filterTag = function(id){
-            $http.get("http://localhost:3000/api/tag/" + id, getConfig).success(function(data){
+            $http.get(url+"/tag/" + id, getConfig).success(function(data){
                 that.events = data;
             }).error(function(data){
                 $scope.error = data.error;
@@ -85,7 +87,7 @@ angular.module('myApp.main', ['ngRoute'])
 
         //Filtrera på skapare
         that.filterCreator = function(id){
-            $http.get("http://localhost:3000/api/creator/" + id, getConfig).success(function(data){
+            $http.get(url+"/creator/" + id, getConfig).success(function(data){
                 that.events = data;
             }).error(function(data){
                 $scope.error = data.error;

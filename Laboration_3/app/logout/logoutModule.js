@@ -8,7 +8,7 @@ angular.module("myApp.logout", ['ngRoute'])
             controller: 'LogoutCtrl'
         });
     }])
-.controller('LogoutCtrl', ['$window', 'appService','$cookieStore', function ($window, appService, $cookieStore) {
+.controller('LogoutCtrl', ['$window','$cookieStore', function ($window, $cookieStore) {
         //När man loggar ut så tömmer jag sessionstorage
         $window.sessionStorage.clear();
         $cookieStore.remove('user');

@@ -36,6 +36,18 @@ angular.module('myApp', [
         this.getMsg = function(){
             return message;
         };
+
+        this.getUrl = function(){
+            return "http://localhost:3000/api";
+        };
+
+        this.getLoginUrl = function(){
+            return "http://localhost:3000/auth";
+        };
+
+        this.getApiKey = function(){
+            return "12345";
+        }
 }])
 
 .directive("myMenu", function(){
