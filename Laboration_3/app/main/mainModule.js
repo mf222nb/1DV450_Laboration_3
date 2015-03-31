@@ -55,7 +55,7 @@ angular.module('myApp.main', ['ngRoute'])
         //Tar bort ett event
         that.removeEvent = function(id){
             var index = that.events.map(function(e) { return e.id; }).indexOf(id);
-            var url = url+"/event/" + id;
+            var baseUrl = url+"/event/" + id;
             var config = {
                 headers : {
                     "Accept" : "application/json",
@@ -63,7 +63,7 @@ angular.module('myApp.main', ['ngRoute'])
                 }
             };
 
-            var promise = $http.delete(url, config);
+            var promise = $http.delete(baseUrl, config);
 
             promise.success(function (){
                 that.events.splice(index, 1);
